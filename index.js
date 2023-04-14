@@ -36,7 +36,7 @@ function calculateAge() {
   }
   if (numYears === 1) {
     document.getElementById("txtyear").innerHTML = " year";
-  }else if(numYears != 1){
+  }else {
     document.getElementById("txtyear").innerHTML = " years"
   }
 
@@ -51,7 +51,7 @@ function calculateAge() {
   if (numMonths === 1) {
     document.getElementById("txtmonth").innerHTML = " month";
      
-  }else if(numMonths != 1){
+  }else {
     document.getElementById("txtyear").innerHTML = " months"
   }
 
@@ -65,7 +65,7 @@ function calculateAge() {
   }
   if (numDays === 1) {
     document.getElementById("txtday").innerHTML = " day";
-  }else if(numDays != 1){
+  }else {
     document.getElementById("txtyear").innerHTML = " days"
   }
 
