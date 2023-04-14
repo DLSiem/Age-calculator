@@ -45,9 +45,9 @@ function calculateAge() {
     numMonths = todayMonth - month - 1;
   }
   numMonths = numMonths < 0 ? numMonths + 12 : numMonths;
-  if (numYears === 1) {
-    document.getElementById("txtyear").innerHTML = " year";
-    document.getElementById("age").innerText = "year";
+  if (numMonths === 1) {
+    document.getElementById("txtmonth").innerHTML = " month";
+     
   }
 
   //calculating days
@@ -58,8 +58,8 @@ function calculateAge() {
   } else {
     numDays = todayDate - day + monthDays[month];
   }
-  if (numYears === 1) {
-    document.getElementById("txtyear").innerHTML = " year";
+  if (numDays === 1) {
+    document.getElementById("txtday").innerHTML = " day";
   }
 
   ///// error messages
