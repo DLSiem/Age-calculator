@@ -18,26 +18,18 @@ function calculateAge() {
   var todayMonth = new Date().getMonth();
   var todayYear = new Date().getFullYear();
 
-  // console.log(
-  //   "Month:" + (month + 1) + "Days" + (day + 1) + "Years" + (year + 1)
-  // );
-
-  // calculating years
+ // calculating years
 
   var numYears;
   if (todayMonth > month || (todayMonth == month && todayDate >= day)) {
     numYears = todayYear - year;
-    if (year === 1) {
-      document.getElementById("txtyear").innerHTML = "year";
-    }else{
-      document.getElementById("txtyear").innerHTML = "years";
   } else {
     numYears = todayYear - year - 1;
   }
   if (numYears === 1) {
     document.getElementById("txtyear").innerHTML = " year";
-  }else {
-    document.getElementById("txtyear").innerHTML = " years"
+  } else {
+    document.getElementById("txtyear").innerHTML = " years";
   }
 
   // calculating months
@@ -50,9 +42,8 @@ function calculateAge() {
   numMonths = numMonths < 0 ? numMonths + 12 : numMonths;
   if (numMonths === 1) {
     document.getElementById("txtmonth").innerHTML = " month";
-     
-  }else {
-    document.getElementById("txtyear").innerHTML = " months"
+  } else {
+    document.getElementById("txtmonth").innerHTML = " months";
   }
 
   //calculating days
@@ -65,10 +56,11 @@ function calculateAge() {
   }
   if (numDays === 1) {
     document.getElementById("txtday").innerHTML = " day";
-  }else {
-    document.getElementById("txtyear").innerHTML = " days"
+  } else {
+    document.getElementById("txtday").innerHTML = " days";
   }
 
+   
   ///// error messages
 
   let dayBorder = document.getElementById("day");
